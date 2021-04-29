@@ -15,6 +15,7 @@ div {
   height: 33.33vh;
   background-color: black;
   border: 8px solid white;
+
 }
 
 @media (orientation: portrait) {
