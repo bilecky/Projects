@@ -2,13 +2,13 @@ let ms = 0;
 let second = 0;
 let minute = 0;
 let hour = 0;
-let lessMs = 0;
 let lessSeconds = 0;
 let lessMinutes = 0;
 let lessHours = 0;
 let startInterval = null;
 
 let status = "stopped";
+
 
 timer = () => {
   ms += 10;
@@ -25,9 +25,8 @@ timer = () => {
       hour++;
     }
   }
-  if (ms < 10) {
-    lessMs = `0${ms}`;
-  } else lessMs = ms;
+  const miliSeconds = ms > 99 ? ms : ms > 9 ? "0" + ms : "00" + ms;
+
   if (second < 10) {
     lessSeconds = `0${second}`;
   } else lessSeconds = second;
@@ -39,9 +38,9 @@ timer = () => {
   } else lessHours = hour;
 
   document.getElementById("display");
-  display.innerHTML = `${lessHours}:${lessMinutes}:${lessSeconds}.${ lessMs
+  display.innerHTML = `${lessHours}:${lessMinutes}:${lessSeconds}.<span style = "font-size: 40px">${miliSeconds
     .toString()
-    .slice(0, -1)}`;
+    .slice(0, -1)}</span>`;
 };
 
 const startstop = document.getElementById("startStop");
@@ -64,8 +63,9 @@ const reset = document.getElementById("reset");
 
 reset.addEventListener("click", () => {
   clearInterval(startInterval);
+
   second = 0;
   minute = 0;
   hour = 0;
-  display.innerHTML = "00.00.00";
+  display.innerHTML = `00:00:00.<span style = "font-size: 40px">00</span>`;
 });

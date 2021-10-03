@@ -1,0 +1,41 @@
+@import url(//db.onlinewebfonts.com/c/84cb021d5f9af287ffff84b61beef6dc?family=clockicons);
+body {
+  background-color: rgb(66, 56, 56);
+}
+.container {
+  width: 50%;
+  height: 40%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: solid black;
+  background-color: black;
+}
+
+#display {
+  width: 100%;
+
+  font-size: 70px;
+  text-align: center;
+  margin: 20px auto;
+  font-family: "clockicons";
+  color: rgb(238, 139, 10);
+  font-weight: bold;
+  transform: scale(0.9, 1.1);
+}
+
+.buttons {
+  text-align: center;
+  height: 100px;
+}
+
+button {
+  margin-top: 15px;
+  height: 80px;
+  width: 100px;
+  font-size: 20px;
+}
