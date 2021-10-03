@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        margin: 0;
+      }
+
+      div {
+        height: 100vh;
+        background-color: blue;
+      }
+      .click {
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+      }
+
+      .click {
+        width: 100px;
+        height: 80px;
+        font-size: larger;
+      }
+
+      h2 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgc">
+      <h2 class="color-name"></h2>
+      <button class="click">CLICK ME</button>
+    </div>
+
+    <script>
+      const colorName = document.querySelector(".color-name");
+      const colors = ["green", "red", "blue", "yellow"];
+      const btn = document.querySelector(".click");
+      const bgc = document.querySelector(".bgc");
+
+      btn.addEventListener("click", () => {
+        const changer = colors[Math.floor(Math.random() * colors.length)];
+        bgc.style.backgroundColor = changer;
+        colorName.innerHTML = `Color name is: ${changer.toString()}`;
+        if (changer === "yellow") {
+          colorName.style.color = "grey";
+          console.log(changer);
+        }
+      });
+    </script>
+  </body>
+</html>
