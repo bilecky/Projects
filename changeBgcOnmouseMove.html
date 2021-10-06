@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChangeBGConMouseMove</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .bgc {
+      width: 100vw;
+      height: 100vh;
+      background-color: gray;
+    }
+    @media (min-width: 1000px) {
+      .bgc-one {
+      background-image: url(https://picsum.photos/seed/1/1920/1080/);
+    }
+    .bgc-two {
+      background-image: url(https://picsum.photos/seed/2/1920/1080/);
+    }
+    .bgc-three {
+      background-image: url(https://picsum.photos/seed/3/1920/1080/);
+    }
+    .bgc-fourth {
+      background-image: url(https://picsum.photos/seed/4/1920/1080/);
+    }
+    .bgc-fifth {
+      background-image: url(https://picsum.photos/seed/5/1920/1080/);
+    }
+    .bgc-sixth {
+      background-image: url(https://picsum.photos/seed/6/1920/1080/);
+    }
+    .bgc-seventh {
+      background-image: url(https://picsum.photos/seed/7/1920/1080/);
+    }}
+  </style>
+  <body>
+    <div class="bgc"></div>
+    <script>
+      const bgc = document.querySelector(".bgc");
+
+      document.addEventListener("mousemove", (e) => {
+        //i used random numbers, just to check if effect is fine
+        let x = e.clientX;
+
+        let xPercent = (x / window.innerWidth) * 100;
+        console.log(xPercent);
+        if (xPercent > 5) {
+          bgc.classList.add("bgc-one");
+        } else {
+          bgc.classList.remove("bgc-one");
+        }
+        if (xPercent > 15) {
+          bgc.classList.add("bgc-two");
+        } else {
+          bgc.classList.remove("bgc-two");
+        }
+        if (xPercent > 30) {
+          bgc.classList.add("bgc-three");
+        } else {
+          bgc.classList.remove("bgc-three");
+        }
+        if (xPercent > 45) {
+          bgc.classList.add("bgc-fourth");
+        } else {
+          bgc.classList.remove("bgc-fourth");
+        }
+        if (xPercent > 60) {
+          bgc.classList.add("bgc-fifth");
+        } else {
+          bgc.classList.remove("bgc-fifth");
+        }
+        if (xPercent > 75) {
+          bgc.classList.add("bgc-sixth");
+        } else {
+          bgc.classList.remove("bgc-sixth");
+        }
+        if (xPercent > 90) {
+          bgc.classList.add("bgc-seventh");
+        } else {
+          bgc.classList.remove("bgc-seventh");
+        }
+      });
+    </script>
+  </body>
+</html>
