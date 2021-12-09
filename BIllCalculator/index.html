@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillCalculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Raleway:ital,wght@0,300;0,900;1,200&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1>BillCalculator</h1>
+            <p>oblicz rachunki</p>
+        </div>
+        <div class="bottom">
+            <label for="price">Kwota do zapłaty:</label>
+            <input type="number" id='price'>
+
+            <label for="people">Ilość osób</label>
+            <input type="number" id='people'>
+
+            <label for="tips">Napiwek:</label>
+            <select name="" id="tips">
+                <option value="0" disabled selected>-- wybierz napiwek --</option>
+
+                <option value="0.05">5%</option>
+                <option value="0.10">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.2">20%</option>
+                <option value="0.3">30%</option>
+            </select>
+            <button class="count">Oblicz</button>
+            <p class="error"></p>
+            <p class="cost-info">Powinniscie sie zlozyc po <span class="cost"></span> zł</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
