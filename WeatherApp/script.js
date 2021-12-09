@@ -30,6 +30,7 @@ const getWeather = () => {
 			cityName.textContent = res.data.name
 			humidity.textContent = hum + '%'
 			temperature.textContent = temp.toFixed(1) + '°C'
+			warning.textContent = ''
 
 			if (status.id >= 200 && status.id < 300) {
 				photo.setAttribute('src', './img/thunderstorm.png')
