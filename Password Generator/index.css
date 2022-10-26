@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1C1C1C;
+
+
+}
+
+.container { 
+    width: 550px;
+    height: 550px;
+    background: #1F2937;
+margin: 0 auto; 
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+}
+
+.header {
+    border-bottom: 2px solid #2F3E53
+;
+    padding-top: 50px;
+    
+    margin-left: 70px;
+    margin-right: 70px;
+    color: white;
+font-family: 'Roboto', sans-serif;
+margin-bottom: 50px;
+
+}
+.header span {
+    color: #4ADF86;
+    
+
+}
+
+.header-text {
+    font-weight: 900;
+font-size: 50px;
+margin-bottom: 0px
+}
+
+
+.header-subtext {
+
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: arial
+}
+.header button {
+    margin-bottom: 30px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: white;
+    background: #10B981;
+  border: 0;
+
+}
+.passwords {
+    
+    height: 150px;
+     margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start
+    
+}
+
+.passwords div {
+    width: 36%;
+    padding: 6px 20px;
+    border-radius: 7px;
+    background: #273549;
+    border: none;
+    color: #55F991;
+    font-size: 14px;
+    height: 18px;
+
+
+}
