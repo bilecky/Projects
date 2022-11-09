@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: roboto;
+}
+
+.container {
+	width: 450px;
+	max-height: 1000px;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	overflow: hidden;
+}
+
+.header {
+	width: 100%;
+	height: 20%;
+	background-image: url(./restaurant-logo.jpg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	color: white;
+	position: relative;
+}
+.backdrop {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	opacity: 0.69;
+}
+.header p {
+	z-index: 2;
+	padding: 0 33px;
+	font-size: 55px;
+	font-family: 'Island Moments', cursive;
+	font-weight: 500;
+}
+.header h2 {
+	z-index: 2;
+	padding: 0 33px;
+	font-size: 55px;
+	font-family: 'Island Moments', cursive;
+	font-weight: 500;
+}
+.header p {
+	font-size: 25px;
+}
+
+.product-pic {
+	font-size: 35px;
+	width: 15%;
+}
+.products-container {
+	padding: 30px 0px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #8b8b8b71;
+	font-family: 'Smythe';
+	letter-spacing: 1px;
+}
+.products {
+	padding: 0 35px 35px 35px;
+}
+.product-details {
+	width: 75%;
+}
+.product-name,
+.total-price {
+	font-weight: 600;
+	margin-bottom: 4px;
+	font-size: 30px;
+}
+.product-spec {
+	font-weight: 400;
+	font-size: 13px;
+	margin-bottom: 9px;
+}
+.product-price {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.product-add {
+	cursor: pointer;
+	border: 1px solid rgba(200, 198, 198, 0.727);
+	border-radius: 50%;
+	height: 20px;
+	width: 10%;
+	padding: 20px;
+	position: relative;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.product-add button {
+	border: none;
+	font-size: 10px;
+	background: none;
+	cursor: pointer;
+}
+.order h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.order {
+	padding: 0 35px 35px 35px;
+
+	font-family: roboto;
+}
+.order-list {
+	display: flex;
+	flex-direction: column;
+}
+.order p {
+	font-family: 'Smythe';
+	font-size: 24px;
+	font-weight: 200;
+}
+.remove-btn {
+	border: none;
+	margin-left: 5px;
+	color: rgba(135, 133, 133, 0.655);
+	background: none;
+	cursor: pointer;
+}
+
+.order-box {
+	display: flex;
+	flex-direction: column;
+
+	padding-bottom: 10px;
+}
+.order-total {
+	border-top: 2px solid;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.complete-btn {
+	margin-top: 20px;
+	border: none;
+	padding: 13px;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #16db99;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.complete-btn:hover {
+	transform: scale(1.03);
+}
